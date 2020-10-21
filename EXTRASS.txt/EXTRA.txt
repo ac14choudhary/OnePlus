@@ -1,0 +1,65 @@
+//EVENTS SCREEN//
+
+function EventsScreen() {
+  return (
+    <View style={{flex: 1}}>
+      <Header titleName="Events" />
+      <View style={styles.EventsScreen}>
+        <TouchableOpacity style={styles.EventScreenButtons}>
+          <View style={{flexDirection: 'row'}}>
+            <Text style={styles.EventText}> Upcoming Events </Text>
+            <Image
+              style={{
+                borderRadius: 30,
+                height: 80,
+                width: 80,
+                resizeMode: 'center',
+                borderColor: '#F50514',
+                resizeMode: 'contain',
+                marginLeft: '25%',
+              }}
+              source={require('./Models/comingsoon.png')}
+            />
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.EventScreenButtons} onPress>
+          <View style={{flexDirection: 'row'}}>
+            <Text style={styles.EventText}> On-Going Events </Text>
+            <Image
+              style={{
+                borderRadius: 30,
+                height: 100,
+                width: 100,
+                resizeMode: 'center',
+                borderColor: '#F50514',
+                resizeMode: 'contain',
+                marginLeft: '20%',
+              }}
+              source={require('./Models/OnEvents.png')}
+            />
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.EventScreenButtons}>
+          <View style={{flexDirection: 'row'}}>
+            <Text style={styles.EventText}> Past Events </Text>
+            <Image
+              style={{
+                borderRadius: 30,
+                height: 80,
+                width: 80,
+                borderColor: '#F50514',
+                resizeMode: 'contain',
+                marginLeft: '40%',
+              }}
+              source={require('./Models/PastEvents.png')}
+            />
+          </View>
+        </TouchableOpacity>
+      </View>
+    </View>
+  );
+}
+
+
+
+
