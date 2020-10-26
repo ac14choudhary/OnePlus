@@ -4,14 +4,14 @@
 // import Header from '../components/Header';
 
 // export default function Team1() {
-    
+
 //       return (
 //         <View style={{flex: 1, paddingBottom: 50}}>
 //           <Header titleName="Team" />
 //           <View
 //             style={{
 //               backgroundColor: '#121212',
-//               paddingVertical: 10,
+
 //             }}>
 //             <FlatList
 //               keyExtractor={(item) => item.id}
@@ -27,10 +27,10 @@
 //                         borderRadius: 30,
 //                         height: 200,
 //                         width: 200,
-    
+
 //                         resizeMode: 'center',
 //                         borderColor: '#F50514',
-    
+
 //                         alignSelf: 'center',
 //                         alignItems: 'center',
 //                       }}
@@ -53,11 +53,10 @@
 //           </View>
 //         </View>
 
-    
 //   );
 // }
-// const styles = StyleSheet.create({ 
-   
+// const styles = StyleSheet.create({
+
 //     listText: {
 //         fontSize: 20,
 //         alignSelf: 'center',
