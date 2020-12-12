@@ -74,17 +74,21 @@ export default function Team() {
           numColumns={2}
           keyExtractor={(item) => item.id}
           data={Tdata}
+          alignSelf="center"
           renderItem={({item}) => (
             <TouchableOpacity
               style={styles.TeamCard}
               onPress={() => pressIHandler(item.id)}>
-              <View style={{flexDirection: 'column'}}>
+              <View
+                style={{
+                  flexDirection: 'column',
+                }}>
                 <Image
                   style={{
                     borderRadius: 20,
-                    height: 200,
-                    width: 200,
-                    resizeMode: 'center',
+                    height: 180,
+                    width: 180,
+                    resizeMode: 'contain',
                     alignSelf: 'center',
                     alignItems: 'center',
                   }}
@@ -107,9 +111,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#121212',
   },
   TeamCard: {
-    padding: 5,
     paddingTop: 30,
-    borderRadius: 20,
   },
   listText: {
     fontSize: 15,

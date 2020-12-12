@@ -27,12 +27,6 @@ export default function Home() {
               size="large"
               source={require('../Models/team/5.jpeg')}
             />
-
-            <Badge
-              size="large"
-              status="success"
-              containerStyle={{position: 'absolute', top: +5, right: +5}}
-            />
           </View>
         </View>
         <View style={styles.LowerContainer}>

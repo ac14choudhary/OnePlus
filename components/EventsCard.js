@@ -12,14 +12,6 @@ export default function EventsCard() {
 
         <Text style={styles.EventsText}> Talent Unbox </Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.BaseCard}>
-        <Image
-          style={styles.EventsImage}
-          source={require('../Models/oe1.jpg')}
-        />
-
-        <Text style={styles.EventsText}> Talent Unbox </Text>
-      </TouchableOpacity>
     </View>
   );
 }
@@ -32,19 +24,20 @@ const styles = StyleSheet.create({
   },
 
   BaseCard: {
-    margin: 15,
+    margin: 25,
     flex: 1,
     flexDirection: 'column',
-    maxHeight: 300,
-    width: 55,
+
     backgroundColor: '#242424',
 
     borderRadius: 15,
   },
 
   EventsImage: {
-    flex: 8,
-
+    flex: 12,
+    margin: '10%',
+    height: '100%',
+    width: '100%',
     alignSelf: 'center',
     resizeMode: 'contain',
     borderRadius: 15,
@@ -56,6 +49,6 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontFamily: 'NeueHaasDisplay-Roman',
     alignContent: 'center',
-    margin: 10,
+    marginBottom: 10,
   },
 });
