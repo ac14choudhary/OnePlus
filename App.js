@@ -17,13 +17,13 @@ import 'react-native-gesture-handler';
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import Header from './components/Header';
 import Collaboration from './Screens/Collaboration';
 import Galleryy from './Screens/Gallery';
 import Events from './Screens/Events';
 import Home from './Screens/HomeScreen';
 import Team from './Screens/Team';
-
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import MIcon from 'react-native-vector-icons/MaterialIcons';
 //HOMESCREEN//
 
 function HomeScreen() {
@@ -48,7 +48,7 @@ function EventsScreen() {
   return <Events />;
 }
 
-//collaboration
+//collaboration//
 
 function CollaborateScreen() {
   return <Collaboration />;
@@ -81,9 +81,9 @@ export default function MyTabs() {
             tabBarLabel: 'Home',
             tabBarIcon: ({color, size}) => (
               <View>
-                <Image
-                  style={{height: 22, width: 22, resizeMode: 'contain'}}
-                  source={require('./Models/home.png')}
+                <Icon
+                  name="home-variant"
+                  style={{fontSize: 24, color: 'white'}}
                 />
               </View>
             ),
@@ -98,10 +98,7 @@ export default function MyTabs() {
             title: 'Gallery',
             tabBarIcon: ({color, size}) => (
               <View>
-                <Image
-                  style={{height: 22, width: 22, resizeMode: 'contain'}}
-                  source={require('./Models/gallery.png')}
-                />
+                <Icon name="image" style={{fontSize: 24, color: 'white'}} />
               </View>
             ),
           }}
@@ -113,9 +110,9 @@ export default function MyTabs() {
             tabBarLabel: 'Team',
             tabBarIcon: ({color, size}) => (
               <View>
-                <Image
-                  style={{height: 22, width: 22, resizeMode: 'contain'}}
-                  source={require('./Models/team.png')}
+                <Icon
+                  name="account-group"
+                  style={{fontSize: 24, color: 'white'}}
                 />
               </View>
             ),
@@ -128,9 +125,9 @@ export default function MyTabs() {
             tabBarLabel: 'Events',
             tabBarIcon: ({color, size}) => (
               <View>
-                <Image
-                  style={{height: 22, width: 22, resizeMode: 'contain'}}
-                  source={require('./Models/events.png')}
+                <MIcon
+                  name="date-range"
+                  style={{fontSize: 24, color: 'white'}}
                 />
               </View>
             ),
@@ -143,10 +140,7 @@ export default function MyTabs() {
             tabBarLabel: 'Collab',
             tabBarIcon: ({color, size}) => (
               <View>
-                <Image
-                  style={{height: 25, width: 25, resizeMode: 'contain'}}
-                  source={require('./Models/collab.png')}
-                />
+                <Icon name="handshake" style={{fontSize: 24, color: 'white'}} />
               </View>
             ),
           }}

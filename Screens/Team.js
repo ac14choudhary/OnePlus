@@ -68,7 +68,7 @@ export default function Team() {
       <View
         style={{
           backgroundColor: '#121212',
-          paddingVertical: 10,
+          paddingBottom: 10,
         }}>
         <FlatList
           numColumns={2}

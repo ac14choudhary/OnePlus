@@ -14,7 +14,7 @@ export default function Splash() {
       <LottieView source={require('../assets/Splash4.json')} autoPlay loop />
     </SafeAreaView>
   );
-}
+} 
 const styles = StyleSheet.create({
   HomeScreen: {
     flex: 1,
